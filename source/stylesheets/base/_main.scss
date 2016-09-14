@@ -1,0 +1,69 @@
+body {
+    height: 100%;
+    background-image: linear-gradient(-180deg, rgba(244,245,245,0.00) 0%, $white-base 50%, $blue-base 99%);
+}
+
+.landing-content {
+  background: url("../images/landing-image.jpg") center;
+  width: 100%;
+  background-size: cover;
+  height: 745px;
+
+  a {
+    text-transform: uppercase;
+    border-bottom: 2px solid $black-base;
+    font-weight: bold;
+    @include rem(margin-left, 30px);
+  }
+
+  a:hover {
+    transition: all 0.3s ease 0s;
+    border-bottom: 2px solid $blue-base;
+
+  }
+}
+
+.cta {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include rem(padding-top, 250px);
+  text-align: center;
+}
+
+.secondary-block {
+  max-width: 425px;
+  text-align: center;
+  display: inline-block;
+  @include rem(margin, 50px);
+}
+
+.secondary-ctas {
+  margin: 0 auto;
+  text-align: center;
+  @include rem(margin-top, 50px);
+}
+
+.divider {
+  background: none repeat scroll 0 0 $grey-lighter;
+  height: 300px;
+  width: 1px;
+  border: none;
+  float: right;
+  margin: -215px -60px 0 0;
+}
+
+
+.text-card {
+  max-width: 900px;
+  @include rem(padding, 50px 100px);
+  background-color: $white-base;
+  text-align: center;
+  @include rem(margin, 50px auto);
+
+}
+
+.rocket-image {
+  position: absolute;
+  @include rem(margin-top, -50px);
+
+}

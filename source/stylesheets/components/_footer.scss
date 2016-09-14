@@ -1,0 +1,15 @@
+footer {
+  border-top: 1px solid #ffffff;
+  @include rem(margin, 100px 50px 35px 50px);
+  @include rem(padding, 20px);
+}
+
+.logo-left {
+  float: left;
+  height: 40px;
+}
+
+.logo-right {
+  float: right;
+  height: 35px;
+}

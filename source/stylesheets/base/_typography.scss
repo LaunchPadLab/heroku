@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, a {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #303141;
+}
+
+p {
+  font-family: 'Museo Slab', sans-serif;
+  color: #303141;
+  font-weight: $light;
+  font-size: $s-bigger;
+  @include rem(margin-bottom, 35px);
+  line-height: 30px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: $s-mega;
+  font-weight: bold;
+  text-align: center;
+  line-height: 75px;
+  @include rem(margin-bottom, 30px);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: $s-big;
+  font-weight: bold;
+  letter-spacing: 2px;
+  @include rem(margin-bottom, 20px);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  color: $blue-base;
+  transition: all 0.3s ease 0s;
+}
+
+
+

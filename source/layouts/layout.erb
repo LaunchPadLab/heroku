@@ -4,17 +4,29 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag :application %>
-    <%= javascript_include_tag :all %>
+    <script src="https://use.typekit.net/kxd2cca.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <%= stylesheet_link_tag "application" %>
+   <!-- Use title if it's in the page YAML frontmatter -->
+    <title>How To Heroku</title>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body>
+    <nav>
+      <h3>How To Heroku</h3>
+      <ul>
+        <li><a>What is Heroku?</a></li>
+        <li><a>Is Heroku for Me?</a></li>
+        <li><a class="build-my-app">Build My App</a></li>
+      </ul>
+    </nav>
+
     <%= yield %>
+
+    <footer>
+      <img class="logo-left" src="images/salesforce-logo.svg" alt="Salesforce Partner">
+      <img class="logo-right" src="images/launchpadlab-logo.svg" alt="LaunchPad Lab">
+    </footer>
+
   </body>
 </html>
