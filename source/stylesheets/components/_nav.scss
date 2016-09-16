@@ -1,5 +1,5 @@
 nav {
-  @include rem(margin, 50px);
+  @include rem(margin, 15px);
   @include rem(padding, 30px);
   background-color: $white-base;
   height: 84px;
@@ -18,8 +18,20 @@ nav {
   }
 
   li {
+      display: none;
+    }
+
+  @include media($tablet) {
+    @include rem(margin, 50px);
+    @include rem(padding, 30px);
+  }
+
+  @include media($tablet-landscape) {
+
+    li {
     display: inline-block;
     margin-left: 30px;
+  }
   }
 }
 

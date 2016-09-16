@@ -7,18 +7,33 @@ p {
   font-family: 'Museo Slab', sans-serif;
   color: #303141;
   font-weight: $light;
-  font-size: $s-bigger;
+  font-size: $s-medium;
   @include rem(margin-bottom, 35px);
-  line-height: 30px;
+  line-height: 23px;
+
+  @include media($tablet) {
+    font-size: $s-bigger;
+    line-height: 30px;
+  }
 }
 
 h1 {
   text-transform: uppercase;
-  font-size: $s-mega;
+  font-size: $s-bigger;
   font-weight: bold;
   text-align: center;
-  line-height: 75px;
+  line-height: 30px;
   @include rem(margin-bottom, 30px);
+
+  @include media($tablet) {
+    font-size: $s-huge;
+    line-height: 50px;
+  }
+
+  @include media($tablet-landscape) {
+    font-size: $s-mega;
+    line-height: 75px;
+  }
 }
 
 h2 {
@@ -34,6 +49,14 @@ h3 {
   font-size: 22px;
   font-weight: bold;
 }
+
+h4 {
+  text-transform: uppercase;
+  font-size: $s-huge;
+  font-weight: bold;
+  @include rem(margin-bottom, 20px);
+}
+
 
 a:hover {
   cursor: pointer;
