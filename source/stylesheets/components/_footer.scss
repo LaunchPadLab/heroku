@@ -1,0 +1,28 @@
+footer {
+  border-top: 1px solid #ffffff;
+  @include rem(margin, 100px 20px 35px 20px);
+  @include rem(padding, 20px);
+
+
+  @include media($tablet) {
+    @include rem(margin, 100px 50px 35px 50px);
+  }
+}
+
+.logo-left {
+  float: left;
+  height: 30px;
+
+  @include media($tablet) {
+    height: 40px;
+  }
+}
+
+.logo-right {
+  float: right;
+  height: 25px;
+
+  @include media($tablet) {
+    height: 35px;
+  }
+}

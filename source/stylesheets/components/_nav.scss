@@ -1,0 +1,53 @@
+nav {
+  @include rem(margin, 15px);
+  @include rem(padding, 30px);
+  background-color: $white-base;
+  height: 84px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 0;
+  left: 0;
+
+
+  h3 {
+    float: left;
+  }
+
+  ul {
+    float: right;
+  }
+
+  li {
+      display: none;
+    }
+
+  @include media($tablet) {
+    @include rem(margin, 50px);
+    @include rem(padding, 30px);
+  }
+
+  @include media($tablet-landscape) {
+
+    li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  }
+}
+
+.build-my-app {
+  background-color: $blue-base;
+  text-transform: uppercase;
+  color: $white-base;
+  @include rem(padding, 30px 29px 29px 29px);
+  @include rem(margin-right, -30px);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+}
+
+.build-my-app:hover {
+  background-color: $black-base;
+  color: $white-base;
+
+}
