@@ -3,6 +3,7 @@ footer {
   @include rem(margin, 100px 20px 35px 20px);
   @include rem(padding, 20px);
 
+
   @include media($tablet) {
     @include rem(margin, 100px 50px 35px 50px);
   }

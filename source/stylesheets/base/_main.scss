@@ -139,6 +139,10 @@ body {
   img {
     @include rem(margin-bottom, -3px);
   }
+
+  .back-arrow {
+    @include rem(margin-bottom, 0);
+  }
 }
 
 .video-card {
@@ -191,8 +195,9 @@ body {
 
   h2 {
     color: white;
-    @include rem(margin-right, 20px);
+    @include rem(margin, 0 20px);
     vertical-align: middle;
+
   }
 
   li {
@@ -217,4 +222,101 @@ body {
 .dual-list {
   @include rem(margin-bottom, 100px);
   max-width: 750px;
+  @include rem(padding, 0 30px);
+
+    h2 {
+    display: none;
+
+    @include media($tablet) {
+      display: block
+    }
+  }
 }
+
+iframe {
+  @include rem(margin, 0 auto);
+  width: 350px;
+  height: 200px;
+  display: block;
+
+  @include media($tablet) {
+    width: 560px;
+    height: 315px;
+  }
+
+    @include media($tablet-landscape) {
+      height: 480px;
+      width: 854px;
+    }
+}
+
+
+.single-video-text {
+  @include rem(padding, 120px 20px 0 20px);
+  @include rem(margin, 0 auto);
+  width: 400px;
+
+  @include media($tablet) {
+    @include rem(padding, 200px 0 50px 0);
+    width: 560px;
+    @include rem(margin, 0 auto);
+
+  }
+
+  @include media($tablet-landscape) {
+    width: 854px;
+
+  }
+}
+
+.text-input,.textarea-input {
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid $grey-lighter;
+  @include rem(padding-left, 10px);
+  font-size: $s-base;
+  color: $grey-base;
+  @include rem(margin-bottom, 10px);
+}
+
+.text-input {
+  height: 50px;
+}
+
+.textarea-input {
+  height: 115px;
+}
+
+.text-card-lpl {
+  max-width: 350px;
+  @include rem(margin, 10px auto);
+
+  @include media($tablet) {
+    max-width: 560px;
+
+  }
+
+  @include media($tablet-landscape) {
+    float: right;
+
+  }
+}
+
+.build-my-app-content {
+  width: 100%;
+  display: table;
+  @include rem(margin, 0 auto);
+  max-width: 1000px;
+}
+
+.form-content {
+  @include rem(margin, 0 auto);
+  width: 360px;
+  @include rem(margin-bottom, 50px);
+
+  @include media($tablet-landscape) {
+    float: left;
+    @include rem(margin-bottom, 10px);
+  }
+}
+

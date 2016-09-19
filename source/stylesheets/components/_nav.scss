@@ -43,6 +43,7 @@ nav {
   @include rem(margin-right, -30px);
   letter-spacing: 1.5px;
   transition: all 0.3s ease 0s;
+  white-space: nowrap;
 }
 
 .build-my-app:hover {

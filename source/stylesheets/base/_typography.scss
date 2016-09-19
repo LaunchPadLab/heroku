@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, a {
   font-family: 'Proxima Nova', sans-serif;
   color: #303141;
+  text-decoration: none;
 }
 
 p {
@@ -55,6 +56,13 @@ h4 {
   font-size: $s-huge;
   font-weight: bold;
   @include rem(margin-bottom, 20px);
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: $s-tiny;
+  font-weight: bold;
+  @include rem(margin-bottom, -10px);
 }
 
 
