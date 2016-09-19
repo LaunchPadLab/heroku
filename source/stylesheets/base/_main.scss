@@ -22,6 +22,10 @@ body {
 
   }
 
+  .button {
+    @include rem(margin-left, -40px);
+  }
+
   @include media($tablet) {
     height: 500px;
   }
@@ -213,10 +217,18 @@ body {
 
 .back {
   float: left;
+  display: none;
+
+  @include media($tablet) {
+      display: block;
+    }
 }
 
 .forward {
-  float: right;
+
+  @include media($tablet) {
+      float: right;
+    }
 }
 
 .dual-list {
@@ -224,13 +236,12 @@ body {
   max-width: 750px;
   @include rem(padding, 0 30px);
 
-    h2 {
-    display: none;
+
 
     @include media($tablet) {
       display: block
     }
-  }
+
 }
 
 iframe {
