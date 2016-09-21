@@ -57,6 +57,9 @@ body {
   .landing-content a:hover {
     transition: all 0.3s ease 0s;
     border-bottom: 2px solid #00AEEF; }
+  .landing-content .button {
+    margin-left: -40px;
+    margin-left: -2.85714rem; }
   @media screen and (min-width: 45em) {
     .landing-content {
       height: 500px; } }
@@ -218,10 +221,15 @@ body {
     margin-top: -0.21429rem; }
 
 .back {
-  float: left; }
+  float: left;
+  display: none; }
+  @media screen and (min-width: 45em) {
+    .back {
+      display: block; } }
 
-.forward {
-  float: right; }
+@media screen and (min-width: 45em) {
+  .forward {
+    float: right; } }
 
 .dual-list {
   margin-bottom: 100px;
@@ -229,11 +237,9 @@ body {
   max-width: 750px;
   padding: 0 30px;
   padding: 0 2.14286rem; }
-  .dual-list h2 {
-    display: none; }
-    @media screen and (min-width: 45em) {
-      .dual-list h2 {
-        display: block; } }
+  @media screen and (min-width: 45em) {
+    .dual-list {
+      display: block; } }
 
 iframe {
   margin: 0 auto;
