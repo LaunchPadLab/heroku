@@ -316,12 +316,12 @@ iframe {
       margin-bottom: 0.71429rem; } }
 
 h1, h2, h3, h4, h5, a {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   color: #303141;
   text-decoration: none; }
 
 p {
-  font-family: 'Museo Slab', sans-serif;
+  font-family: 'museo-slab', sans-serif;
   color: #303141;
   font-weight: 300;
   font-size: 15px;
