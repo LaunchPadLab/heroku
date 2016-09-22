@@ -315,6 +315,24 @@ iframe {
       margin-bottom: 10px;
       margin-bottom: 0.71429rem; } }
 
+.video-time {
+  padding: 5px;
+  padding: 0.35714rem;
+  background-color: #303141;
+  float: right;
+  color: #FFFFFF;
+  margin: -31px 6px 0 0;
+  margin: -2.21429rem 0.42857rem 0 0;
+  font-size: 12px;
+  position: relative;
+  z-index: 100; }
+  @media screen and (min-width: 45em) {
+    .video-time {
+      margin: 5px 0 0 -36px;
+      margin: 0.35714rem 0 0 -2.57143rem;
+      float: none;
+      position: absolute; } }
+
 h1, h2, h3, h4, h5, a {
   font-family: 'proxima-nova', sans-serif;
   color: #303141;
