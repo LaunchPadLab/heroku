@@ -331,3 +331,21 @@ iframe {
   }
 }
 
+
+.video-time {
+  @include rem(padding, 5px);
+  background-color: $black-base;
+  float: right;
+  color: $white-base;
+  @include rem(margin, -31px 6px 0 0);
+  font-size: $s-small;
+  position: relative;
+  z-index: 100;
+
+  @include media($tablet) {
+     @include rem(margin, 5px 0 0 -36px);
+     float: none;
+     position: absolute;
+  }
+
+}
