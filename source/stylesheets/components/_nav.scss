@@ -39,7 +39,7 @@ nav {
   background-color: $blue-base;
   text-transform: uppercase;
   color: $white-base;
-  @include rem(padding, 30px 29px 29px 29px);
+  @include rem(padding, 30px 29px 28px 29px);
   @include rem(margin-right, -30px);
   letter-spacing: 1.5px;
   transition: all 0.3s ease 0s;

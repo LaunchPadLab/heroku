@@ -199,7 +199,6 @@ body {
 
   h2 {
     color: white;
-    @include rem(margin, 0 20px);
     vertical-align: middle;
 
   }
@@ -212,6 +211,12 @@ body {
     vertical-align: middle;
     @include rem(margin-top, -3px);
   }
+
+@include media($tablet) {
+  h2 {
+    @include rem(margin, 0 20px);
+  }
+}
 
 }
 
