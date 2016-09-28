@@ -157,11 +157,14 @@ body {
   .main-text img, .main-text h2 {
     display: inline-block; }
   .main-text h2 {
-    margin-left: 10px;
-    margin-left: 0.71429rem; }
+    margin-left: 2px;
+    margin-left: 0.14286rem; }
   .main-text img {
     margin-bottom: -3px;
-    margin-bottom: -0.21429rem; }
+    margin-bottom: -0.21429rem;
+    max-height: 12px; }
+  .main-text .play-button {
+    margin-bottom: 0px; }
   .main-text .back-arrow {
     margin-bottom: 0; }
 
@@ -210,8 +213,6 @@ body {
   height: 1px; }
   .forward-list h2 {
     color: white;
-    margin: 0 20px;
-    margin: 0 1.42857rem;
     vertical-align: middle; }
   .forward-list li {
     display: inline-block; }
@@ -219,6 +220,10 @@ body {
     vertical-align: middle;
     margin-top: -3px;
     margin-top: -0.21429rem; }
+  @media screen and (min-width: 45em) {
+    .forward-list h2 {
+      margin: 0 20px;
+      margin: 0 1.42857rem; } }
 
 .back {
   float: left;
@@ -240,6 +245,9 @@ body {
   @media screen and (min-width: 45em) {
     .dual-list {
       display: block; } }
+
+.forward h2, .back h2, .forward-list h2, .dual-list h2 {
+  font-size: 14px; }
 
 iframe {
   margin: 0 auto;
@@ -332,6 +340,14 @@ iframe {
       margin: 0.35714rem 0 0 -2.57143rem;
       float: none;
       position: absolute; } }
+
+.phone-number {
+  font-size: 14px;
+  color: #00AEEF;
+  font-family: "museo-slab"; }
+  @media screen and (min-width: 45em) {
+    .phone-number {
+      font-size: 24px; } }
 
 h1, h2, h3, h4, h5, a {
   font-family: 'proxima-nova', sans-serif;
@@ -457,8 +473,8 @@ nav {
   background-color: #00AEEF;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 30px 29px 29px 29px;
-  padding: 2.14286rem 2.07143rem 2.07143rem 2.07143rem;
+  padding: 30px 29px 28px 29px;
+  padding: 2.14286rem 2.07143rem 2rem 2.07143rem;
   margin-right: -30px;
   margin-right: -2.14286rem;
   letter-spacing: 1.5px;
