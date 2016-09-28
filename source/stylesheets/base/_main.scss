@@ -137,11 +137,16 @@ body {
   }
 
   h2 {
-    @include rem(margin-left, 10px);
+    @include rem(margin-left, 2px);
   }
 
   img {
     @include rem(margin-bottom, -3px);
+    max-height: 12px;
+  }
+
+  .play-button {
+    @include rem(margin-bottom, 0px);
   }
 
   .back-arrow {
@@ -231,6 +236,7 @@ body {
 
 .forward {
 
+
   @include media($tablet) {
       float: right;
     }
@@ -241,12 +247,15 @@ body {
   max-width: 750px;
   @include rem(padding, 0 30px);
 
+  @include media($tablet) {
+    display: block
+  }
+}
 
-
-    @include media($tablet) {
-      display: block
-    }
-
+.forward, .back, .forward-list, .dual-list {
+    h2 {
+    font-size: $s-base;
+  }
 }
 
 iframe {
@@ -265,7 +274,6 @@ iframe {
       width: 854px;
     }
 }
-
 
 .single-video-text {
   @include rem(padding, 120px 20px 0 20px);
@@ -351,6 +359,17 @@ iframe {
      @include rem(margin, 5px 0 0 -36px);
      float: none;
      position: absolute;
+  }
+
+}
+
+.phone-number {
+  font-size: $s-base;
+  color: $blue-base;
+  font-family: "museo-slab";
+
+  @include media($tablet) {
+    font-size: $s-bigger;
   }
 
 }
