@@ -11,6 +11,8 @@ nav {
 
   h3 {
     float: left;
+    position: relative;
+    z-index: 100000;
   }
 
   ul {

@@ -196,6 +196,25 @@ body {
   }
 }
 
+.coming-soon {
+  p, h6 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: $s-base;
+    font-family: 'museo-slab', sans-serif;
+    @include rem(margin-top, 5px);
+  }
+
+  h6 {
+    letter-spacing: 12px;
+    @include rem(margin-top, 30px);
+  }
+}
+
+
 .forward-list {
   text-align: center;
   @include rem(margin, 0 auto);
@@ -363,7 +382,7 @@ iframe {
 
 }
 
-.phone-number {
+.secondary-link {
   font-size: $s-base;
   color: $blue-base;
   font-family: "museo-slab";
@@ -372,4 +391,8 @@ iframe {
     font-size: $s-bigger;
   }
 
+}
+
+.secondary-link:hover {
+  color: $black-base;
 }

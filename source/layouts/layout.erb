@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <%= favicon_tag 'images/favicon.png' %>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -23,7 +24,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <%= stylesheet_link_tag "application" %>
    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Why Heroku</title>
+  <title><%= current_page.data.title %></title>
   </head>
 
   <body>
