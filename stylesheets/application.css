@@ -206,6 +206,19 @@ body {
   .video-card-copy p {
     margin-bottom: 0; }
 
+.coming-soon p, .coming-soon h6 {
+  text-align: center;
+  font-weight: bold; }
+.coming-soon p {
+  font-size: 14px;
+  font-family: 'museo-slab', sans-serif;
+  margin-top: 5px;
+  margin-top: 0.35714rem; }
+.coming-soon h6 {
+  letter-spacing: 12px;
+  margin-top: 30px;
+  margin-top: 2.14286rem; }
+
 .forward-list {
   text-align: center;
   margin: 0 auto;
@@ -341,15 +354,18 @@ iframe {
       float: none;
       position: absolute; } }
 
-.phone-number {
+.secondary-link {
   font-size: 14px;
   color: #00AEEF;
   font-family: "museo-slab"; }
   @media screen and (min-width: 45em) {
-    .phone-number {
+    .secondary-link {
       font-size: 24px; } }
 
-h1, h2, h3, h4, h5, a {
+.secondary-link:hover {
+  color: #303141; }
+
+h1, h2, h3, h4, h5, h6, a {
   font-family: 'proxima-nova', sans-serif;
   color: #303141;
   text-decoration: none; }
@@ -411,6 +427,11 @@ h5 {
   margin-bottom: -10px;
   margin-bottom: -0.71429rem; }
 
+h6 {
+  text-transform: uppercase;
+  color: #303141;
+  font-size: 24px; }
+
 a:hover {
   cursor: pointer;
   color: #00AEEF;
@@ -453,7 +474,9 @@ nav {
   right: 0;
   left: 0; }
   nav h3 {
-    float: left; }
+    float: left;
+    position: relative;
+    z-index: 100000; }
   nav ul {
     float: right; }
   nav li {
